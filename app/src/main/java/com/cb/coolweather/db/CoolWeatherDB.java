@@ -50,7 +50,7 @@ public class CoolWeatherDB {
     /**
      * *将Province实例存储到数据库
      */
-    private void saveProvince(Province province) {
+    public void saveProvince(Province province) {
         if (province != null) {
             ContentValues values = new ContentValues();
             values.put("province_name", province.getProvinceName());
@@ -84,7 +84,7 @@ public class CoolWeatherDB {
     /**
      * *将City实例存储到数据库
      */
-    private void saveCity(City city) {
+    public void saveCity(City city) {
         if (city != null) {
             ContentValues values = new ContentValues();
             values.put("city_name", city.getCityName());
@@ -120,7 +120,7 @@ public class CoolWeatherDB {
     /**
      * *将County实例存储到数据库
      */
-    private void saveCounty(County county) {
+    public void saveCounty(County county) {
         if (county != null) {
             ContentValues values = new ContentValues();
             values.put("county_name", county.getCountyName());
